@@ -38,186 +38,201 @@
         </div>
     </header>
 
-    <!-- the main body section starts -->
-    <main class="w-[80%] mt-10 ">
-        <!-- first section of the main -->
-        <section class="bg-white flex justify-between p-5">
-            <!-- first box -->
-            <div class="bg-[#F4F7FF] flex  w-[20%] px-5 py-3 items-center rounded-md">
-                <div class="bg-white rounded-full p-3">
-                    <img src="assets/checkbox.png" alt="">
+    <main>
+        <!-- the main body section-1 starts -->
+        <section class="w-[80%] mt-10 ">
+            <!-- first section of the main -->
+            <section class="bg-white flex justify-between p-5">
+                <!-- first box -->
+                <div class="bg-[#F4F7FF] flex  w-[20%] px-5 py-3 items-center rounded-md">
+                    <div class="bg-white rounded-full p-3">
+                        <img src="assets/checkbox.png" alt="">
+                    </div>
+                    <div>
+                        <p>Task Assigned</p>
+                        <h2 class="text-xl font-bold">05</h2>
+                    </div>
                 </div>
-                <div>
-                    <p>Task Assigned</p>
-                    <h2 class="text-xl font-bold">05</h2>
+                <!-- second box -->
+                <div class="bg-[#6C7FFA] flex  w-[52%] px-5 py-3 items-center rounded-md">
+                    <img src="assets/board.png" alt="">
+                    <h3 class="text-white">Discover Something New Today!</h3>
                 </div>
-            </div>
-            <!-- second box -->
-            <div class="bg-[#6C7FFA] flex  w-[52%] px-5 py-3 items-center rounded-md">
-                <img src="assets/board.png" alt="">
-                <h3 class="text-white">Discover Something New Today!</h3>
-            </div>
-            <!-- third box -->
-            <div class="bg-[#F4F7FF] flex  w-[20%] px-5 py-3 items-center rounded-md gap-1">
-                <div class="bg-white rounded-full p-3">
-                    <img src="assets/calender.png" alt="">
+                <!-- third box -->
+                <div class="bg-[#F4F7FF] flex  w-[20%] px-5 py-3 items-center rounded-md gap-1">
+                    <div class="bg-white rounded-full p-3">
+                        <img src="assets/calender.png" alt="">
+                    </div>
+                    <h3 id="date" class="font-semibold"></h3>
                 </div>
-                <h3 id="date" class="font-semibold"></h3>
-            </div>
+            </section>
+
+            <!-- first section of the main -->
+            <section class="bg-white  p-5 grid grid-cols-3 gap-4">
+                <!-- first box -->
+                <div class="bg-[#F4F7FF] border border-[#9BA8F8] rounded-xl px-2 py-5">
+                    <!-- tag -->
+                    <div class="bg-white border-[#9BA8F8] p-2 rounded-md mb-2 border w-fit">
+                        <p>ShopEase</p>
+                    </div>
+                    <!-- head line -->
+                    <h2 class="text-xl">Fix Mobile Button Issue </h2>
+                    <!-- details -->
+                    <div class="bg-white p-4">
+                        <p class="opacity-50">Debug using Chrome<br>DevTools, check for overlapping</p>
+                    </div>
+                    <!-- bottom -->
+                    <div class="flex items-center justify-between">
+                        <!-- deadline and date -->
+                        <div>
+                            <p>Deadline</p>
+                            <p>21 March 2025</p>
+                        </div>
+                        <!-- button -->
+                        <div>
+                            <button class="bg-[#3752FD] rounded-md px-3 py-2 text-white">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- second box -->
+                <div class="bg-[#F4F7FF] border border-[#9BA8F8] rounded-xl px-2 py-5 ">
+                    <!-- tag -->
+                    <div class="bg-white p-2 rounded-md mb-2 border border-[#9BA8F8] w-fit">
+                        <p>CloudSync</p>
+                    </div>
+                    <!-- head line -->
+                    <h2 class="text-xl">Add Dark Mode </h2>
+                    <!-- details -->
+                    <div class="bg-white p-4">
+                        <p class="opacity-50">Store the user preference in localStorage, update CSS variables</p>
+                    </div>
+                    <!-- bottom -->
+                    <div class="flex items-center justify-between">
+                        <!-- deadline and date -->
+                        <div>
+                            <p>Deadline</p>
+                            <p>21 March 2025</p>
+                        </div>
+                        <!-- button -->
+                        <div>
+                            <button class="bg-[#3752FD] rounded-md px-3 py-2 text-white">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- third box -->
+                <div class="bg-[#F4F7FF] border border-[#9BA8F8] rounded-xl px-2 py-5 ">
+                    <!-- tag -->
+                    <div class="bg-white border-[#9BA8F8] p-2 rounded-md mb-2 border w-fit">
+                        <p>SwiftPay</p>
+                    </div>
+                    <!-- head line -->
+                    <h2 class="text-xl">Optimize Home page</h2>
+                    <!-- details -->
+                    <div class="bg-white p-4">
+                        <p class="opacity-50">Debug using Chrome<br>DevTools, check for overlapping</p>
+                    </div>
+                    <!-- bottom -->
+                    <div class="flex items-center justify-between">
+                        <!-- deadline and date -->
+                        <div>
+                            <p>Deadline</p>
+                            <p>21 March 2025</p>
+                        </div>
+                        <!-- button -->
+                        <div>
+                            <button class="bg-[#3752FD] rounded-md px-3 py-2 text-white">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- fourth box -->
+                <div class="bg-[#F4F7FF] border border-[#9BA8F8] rounded-xl px-2 py-5 ">
+                    <!-- tag -->
+                    <div class="bg-white border-[#9BA8F8] p-2 rounded-md mb-2 border w-fit">
+                        <p>Meta</p>
+                    </div>
+                    <!-- head line -->
+                    <h2 class="text-xl">Add new emoji 🤲 </h2>
+                    <!-- details -->
+                    <div class="bg-white p-4">
+                        <p class="opacity-50">Debug using Chrome<br>DevTools, check for overlapping</p>
+                    </div>
+                    <!-- bottom -->
+                    <div class="flex items-center justify-between">
+                        <!-- deadline and date -->
+                        <div>
+                            <p>Deadline</p>
+                            <p>21 March 2025</p>
+                        </div>
+                        <!-- button -->
+                        <div>
+                            <button class="bg-[#3752FD] rounded-md px-3 py-2 text-white">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- fifth box -->
+                <div class="bg-[#F4F7FF] border border-[#9BA8F8] rounded-xl px-2 py-5 ">
+                    <!-- tag -->
+                    <div class="bg-white border-[#9BA8F8] p-2 rounded-md mb-2 border w-fit">
+                        <p>Google LLC</p>
+                    </div>
+                    <!-- head line -->
+                    <h2 class="text-xl">Integrate OpenAI API </h2>
+                    <!-- details -->
+                    <div class="bg-white p-4">
+                        <p class="opacity-50">Debug using Chrome<br>DevTools, check for overlapping</p>
+                    </div>
+                    <!-- bottom -->
+                    <div class="flex items-center justify-between">
+                        <!-- deadline and date -->
+                        <div>
+                            <p>Deadline</p>
+                            <p>21 March 2025</p>
+                        </div>
+                        <!-- button -->
+                        <div>
+                            <button class="bg-[#3752FD] rounded-md px-3 py-2 text-white">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- sixth box -->
+                <div class="bg-[#F4F7FF] border border-[#9BA8F8] rounded-xl px-2 py-5 ">
+                    <!-- tag -->
+                    <div class="bg-white border-[#9BA8F8] p-2 rounded-md mb-2 border w-fit">
+                        <p>Glassdoar</p>
+                    </div>
+                    <!-- head line -->
+                    <h2 class="text-xl">Improve Job searching </h2>
+                    <!-- details -->
+                    <div class="bg-white p-4">
+                        <p class="opacity-50">Debug using Chrome<br>DevTools, check for overlapping</p>
+                    </div>
+                    <!-- bottom -->
+                    <div class="flex items-center justify-between">
+                        <!-- deadline and date -->
+                        <div>
+                            <p>Deadline</p>
+                            <p>21 March 2025</p>
+                        </div>
+                        <!-- button -->
+                        <div>
+                            <button class="bg-[#3752FD] rounded-md px-3 py-2 text-white">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </section>
 
-        <!-- first section of the main -->
-        <section class="bg-white  p-5 grid grid-cols-3 gap-4">
-            <!-- first box -->
-            <div class="bg-[#F4F7FF] border border-[#9BA8F8] rounded-xl px-2 py-5">
-                <!-- tag -->
-                <div class="bg-white p-2 rounded-md mb-2 border w-fit">
-                    <p>ShopEase</p>
+        <!-- the main body section-2 starts -->
+        <section class="w-[20%] mt-10">
+            <section class="bg-white p-5">
+                <p>Activity Log</p>
+                <!-- button -->
+                <div>
+                    <button class="bg-[#3752FD] rounded-md px-3 py-2 text-white">Completed</button>
                 </div>
-                <!-- head line -->
-                <h2 class="text-xl">Fix Mobile Button Issue </h2>
-                <!-- details -->
-                <div class="bg-white p-4">
-                    <p class="opacity-50">Debug using Chrome<br>DevTools, check for overlapping</p>
-                </div>
-                <!-- bottom -->
-                <div class="flex items-center justify-between">
-                    <!-- deadline and date -->
-                    <div>
-                        <p>Deadline</p>
-                        <p>21 March 2025</p>
-                    </div>
-                    <!-- button -->
-                    <div>
-                        <button class="bg-[#3752FD] rounded-md px-3 py-2 text-white">Completed</button>
-                    </div>
-                </div>
-            </div>
-            <!-- second box -->
-            <div class="bg-[#F4F7FF] border border-[#9BA8F8] rounded-xl px-2 py-5 ">
-                <!-- tag -->
-                <div class="bg-white p-2 rounded-md mb-2 border w-fit">
-                    <p>ShopEase</p>
-                </div>
-                <!-- head line -->
-                <h2 class="text-xl">Fix Mobile Button Issue </h2>
-                <!-- details -->
-                <div class="bg-white p-4">
-                    <p class="opacity-50">Debug using Chrome<br>DevTools, check for overlapping</p>
-                </div>
-                <!-- bottom -->
-                <div class="flex items-center justify-between">
-                    <!-- deadline and date -->
-                    <div>
-                        <p>Deadline</p>
-                        <p>21 March 2025</p>
-                    </div>
-                    <!-- button -->
-                    <div>
-                        <button class="bg-[#3752FD] rounded-md px-3 py-2 text-white">Completed</button>
-                    </div>
-                </div>
-            </div>
-            <!-- third box -->
-            <div class="bg-[#F4F7FF] border border-[#9BA8F8] rounded-xl px-2 py-5 ">
-                <!-- tag -->
-                <div class="bg-white p-2 rounded-md mb-2 border w-fit">
-                    <p>ShopEase</p>
-                </div>
-                <!-- head line -->
-                <h2 class="text-xl">Fix Mobile Button Issue </h2>
-                <!-- details -->
-                <div class="bg-white p-4">
-                    <p class="opacity-50">Debug using Chrome<br>DevTools, check for overlapping</p>
-                </div>
-                <!-- bottom -->
-                <div class="flex items-center justify-between">
-                    <!-- deadline and date -->
-                    <div>
-                        <p>Deadline</p>
-                        <p>21 March 2025</p>
-                    </div>
-                    <!-- button -->
-                    <div>
-                        <button class="bg-[#3752FD] rounded-md px-3 py-2 text-white">Completed</button>
-                    </div>
-                </div>
-            </div>
-            <!-- fourth box -->
-            <div class="bg-[#F4F7FF] border border-[#9BA8F8] rounded-xl px-2 py-5 ">
-                <!-- tag -->
-                <div class="bg-white p-2 rounded-md mb-2 border w-fit">
-                    <p>ShopEase</p>
-                </div>
-                <!-- head line -->
-                <h2 class="text-xl">Fix Mobile Button Issue </h2>
-                <!-- details -->
-                <div class="bg-white p-4">
-                    <p class="opacity-50">Debug using Chrome<br>DevTools, check for overlapping</p>
-                </div>
-                <!-- bottom -->
-                <div class="flex items-center justify-between">
-                    <!-- deadline and date -->
-                    <div>
-                        <p>Deadline</p>
-                        <p>21 March 2025</p>
-                    </div>
-                    <!-- button -->
-                    <div>
-                        <button class="bg-[#3752FD] rounded-md px-3 py-2 text-white">Completed</button>
-                    </div>
-                </div>
-            </div>
-            <!-- fifth box -->
-            <div class="bg-[#F4F7FF] border border-[#9BA8F8] rounded-xl px-2 py-5 ">
-                <!-- tag -->
-                <div class="bg-white p-2 rounded-md mb-2 border w-fit">
-                    <p>ShopEase</p>
-                </div>
-                <!-- head line -->
-                <h2 class="text-xl">Fix Mobile Button Issue </h2>
-                <!-- details -->
-                <div class="bg-white p-4">
-                    <p class="opacity-50">Debug using Chrome<br>DevTools, check for overlapping</p>
-                </div>
-                <!-- bottom -->
-                <div class="flex items-center justify-between">
-                    <!-- deadline and date -->
-                    <div>
-                        <p>Deadline</p>
-                        <p>21 March 2025</p>
-                    </div>
-                    <!-- button -->
-                    <div>
-                        <button class="bg-[#3752FD] rounded-md px-3 py-2 text-white">Completed</button>
-                    </div>
-                </div>
-            </div>
-            <!-- sixth box -->
-            <div class="bg-[#F4F7FF] border border-[#9BA8F8] rounded-xl px-2 py-5 ">
-                <!-- tag -->
-                <div class="bg-white p-2 rounded-md mb-2 border w-fit">
-                    <p>ShopEase</p>
-                </div>
-                <!-- head line -->
-                <h2 class="text-xl">Fix Mobile Button Issue </h2>
-                <!-- details -->
-                <div class="bg-white p-4">
-                    <p class="opacity-50">Debug using Chrome<br>DevTools, check for overlapping</p>
-                </div>
-                <!-- bottom -->
-                <div class="flex items-center justify-between">
-                    <!-- deadline and date -->
-                    <div>
-                        <p>Deadline</p>
-                        <p>21 March 2025</p>
-                    </div>
-                    <!-- button -->
-                    <div>
-                        <button class="bg-[#3752FD] rounded-md px-3 py-2 text-white">Completed</button>
-                    </div>
-                </div>
-            </div>
+
+            </section>
         </section>
 
     </main>
