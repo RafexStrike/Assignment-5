@@ -9,28 +9,28 @@ const options = {
 };
 const formattedDate = today
   .toLocaleDateString("en-US", options)
-  .replace(/(\d+)/, "$1 "); 
+  .replace(/(\d+)/, "$1 ");
 
 dateElement.textContent = formattedDate;
 //
 //
 //
 function formatTimeWithSeconds() {
-    const now = new Date();
-    
-    // Get hours in 12-hour format
-    let hours = now.getHours();
-    const ampm = hours >= 12 ? 'PM' : 'AM';
-    hours = hours % 12;
-    hours = hours ? hours : 12; // the hour '0' should be '12'
-    
-    const minutes = now.getMinutes().toString().padStart(2, '0');
-    const seconds = now.getSeconds().toString().padStart(2, '0');
-    
-    const timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
-    
-    return timeString;
-  }
+  const now = new Date();
+
+  // Get hours in 12-hour format
+  let hours = now.getHours();
+  const ampm = hours >= 12 ? "PM" : "AM";
+  hours = hours % 12;
+  hours = hours ? hours : 12; // the hour '0' should be '12'
+
+  const minutes = now.getMinutes().toString().padStart(2, "0");
+  const seconds = now.getSeconds().toString().padStart(2, "0");
+
+  const timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
+
+  return timeString;
+}
 //
 //
 // Function to generate a random hex color
@@ -64,9 +64,9 @@ for (let completeBtn of completeBtns) {
       completeBtn.parentNode.parentNode.parentNode.querySelector(
         "h2"
       ).innerText;
-    //   
-    alert(`Board updated your "${taskDone}" task as completed!`)
-    // 
+    //
+    alert(`Board updated your "${taskDone}" task as completed!`);
+    //
     let p = document.createElement("p");
     p.innerText = `You have completed the task: ${taskDone} at ${formatTimeWithSeconds()}.`;
     logHistorySection.append(p);
@@ -86,15 +86,19 @@ for (let completeBtn of completeBtns) {
     let currentDue = parseInt(taskDue.innerText);
     let newDue = currentDue - 1;
     taskDue.innerText = newDue;
-    if(newDue === 0){
-        alert("Congratulations! You have completed all the tasks!")
+    if (newDue === 0) {
+      alert("Congratulations! You have completed all the tasks!");
     }
   });
 }
 
+const activityLogSection = document.getElementById("activityLogSection");
+const clearHistoryBtn = document.getElementById("clearHistoryBtn");
 
+clearHistoryBtn.addEventListener("click", () => {
+  let ps = activityLogSection.querySelectorAll("p");
 
-
-
-  
-
+  for (let p of ps) {
+    p.style.display = "none";
+  }
+});
