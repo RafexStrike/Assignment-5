@@ -1,7 +1,6 @@
 const dateElement = document.getElementById("date");
 const today = new Date();
 
-// Format the date as "Wed, Jul 28 2025"
 const options = {
   weekday: "short", // "Wed"
   month: "short", // "Jul"
@@ -10,12 +9,28 @@ const options = {
 };
 const formattedDate = today
   .toLocaleDateString("en-US", options)
-  .replace(/(\d+)/, "$1 "); // Adds space before day
+  .replace(/(\d+)/, "$1 "); 
 
 dateElement.textContent = formattedDate;
 //
 //
 //
+function formatTimeWithSeconds() {
+    const now = new Date();
+    
+    // Get hours in 12-hour format
+    let hours = now.getHours();
+    const ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+    
+    const timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
+    
+    return timeString;
+  }
 //
 //
 // Function to generate a random hex color
@@ -49,8 +64,11 @@ for (let completeBtn of completeBtns) {
       completeBtn.parentNode.parentNode.parentNode.querySelector(
         "h2"
       ).innerText;
+    //   
+    alert(`Board updated your "${taskDone}" task as completed!`)
+    // 
     let p = document.createElement("p");
-    p.innerText = `You have completed the task: ${taskDone} at ${formattedDate}.`;
+    p.innerText = `You have completed the task: ${taskDone} at ${formatTimeWithSeconds()}.`;
     logHistorySection.append(p);
     p.style.backgroundColor = "#F4F7FF";
     p.style.borderRadius = "8px";
@@ -68,5 +86,15 @@ for (let completeBtn of completeBtns) {
     let currentDue = parseInt(taskDue.innerText);
     let newDue = currentDue - 1;
     taskDue.innerText = newDue;
+    if(newDue === 0){
+        alert("Congratulations! You have completed all the tasks!")
+    }
   });
 }
+
+
+
+
+
+  
+
