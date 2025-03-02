@@ -16,11 +16,6 @@ dateElement.textContent = formattedDate;
 // 
 // 
 // 
-// 
-// 
-// 
-// 
-// 
 // Function to generate a random hex color
 function getRandomColor() {
     const letters = '0123456789ABCDEF';
@@ -38,3 +33,22 @@ themeButton.addEventListener("click", ()=>{
     console.log(randomColor)
     body.style.backgroundColor = randomColor
 })
+
+
+// experimental queryselector all
+const completeBtns = document.querySelectorAll(".rounded-md.px-3.py-2.text-white")
+const logHistorySection = document.getElementById("logHistorySection")
+console.log(completeBtns)
+for(let completeBtn of completeBtns){
+    console.log(completeBtn)
+    completeBtn.addEventListener("click", ()=>{
+        console.log("hi completed button has just been clicked!")
+        let taskDone = completeBtn.parentNode.parentNode.parentNode.querySelector("h2").innerText
+        let p = document.createElement('p')
+        p.innerText = `You have completed the task: ${taskDone}`
+        logHistorySection.append(p)
+
+        
+
+    })
+}
