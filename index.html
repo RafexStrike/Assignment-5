@@ -21,7 +21,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="bg-[#F4F7FF] poppins max-w-[1440px] mx-auto text-black px-[100px] py-[20px]">
+<body id="body" class="bg-[#F4F7FF] poppins max-w-[1440px] mx-auto text-black px-[100px] py-[20px]">
     <header class="bg-white  rounded-md flex justify-between">
         <!-- the logo and brand name container div -->
         <div class=" flex items-center gap-1 px-3 py-4">
@@ -34,7 +34,7 @@
                 <img src="assets/checkbox.png" alt="">
                 <h1 class="text-2xl font-bold">23</h1>
             </div>
-            <button><img src="assets/theme-btn.png" alt=""></button>
+            <button id="themeButton"><img src="assets/theme-btn.png" alt=""></button>
         </div>
     </header>
 
@@ -67,8 +67,8 @@
                 </div>
             </section>
 
-            <!-- first section of the main -->
-            <section class="bg-white  p-5 grid grid-cols-3 gap-4">
+            <!-- second section of the main -->
+            <section class="bg-white  p-5 grid grid-cols-3 gap-4 mt-2 rounded-2xl">
                 <!-- first box -->
                 <div class="bg-[#F4F7FF] border border-[#9BA8F8] rounded-xl px-2 py-5">
                     <!-- tag -->
@@ -233,7 +233,7 @@
                 </div>
                 <!-- button -->
                 <div>
-                    <button class="bg-[#3752FD] rounded-md px-3 py-2 text-white">Completed</button>
+                    <button class="bg-[#3752FD] rounded-md px-3 py-2 text-white">Clear History</button>
                 </div>
 
             </section>
